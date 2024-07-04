@@ -4,7 +4,7 @@ from OpenGL.GLU import *
 import random
 
 def draw_points(x, y):
-    glPointSize(4) #pixel size. by default 1 thake
+    glPointSize(5) #pixel size. by default 1 thake
     glBegin(GL_POINTS)
     glColor3f(0.0, 0.0, 0.0)
     glVertex2f(x,y) #jekhane show korbe pixel
@@ -107,7 +107,7 @@ def drawhouse():
 
 
 
-num_raindrops = 100
+num_raindrops = 200
 drops = [(random.uniform(10, 490), random.uniform(100, 500)) for _ in range(num_raindrops)]
 
 def rain():
@@ -181,7 +181,7 @@ def specialKeyListener(key, x, y):
     if key == GLUT_KEY_UP:
         speed *= 2
         print("Speed Increased",'Current speed:', speed)
-    if key == GLUT_KEY_DOWN:  # // up arrow key
+    if key == GLUT_KEY_DOWN:
         speed /= 2
         print("Speed Decreased",'Current speed:', speed)
     if key == GLUT_KEY_END:
@@ -200,8 +200,10 @@ def showScreen():
     iterate()
 
     #call the draw methods here
+    #======================
     drawhouse()
     startrain()
+    #======================
     glutSwapBuffers()
 
 
