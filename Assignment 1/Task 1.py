@@ -107,7 +107,7 @@ def drawhouse():
 
 
 
-num_raindrops = 200
+num_raindrops = 300
 drops = [(random.uniform(10, 490), random.uniform(100, 500)) for _ in range(num_raindrops)]
 
 def rain():
