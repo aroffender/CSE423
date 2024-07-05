@@ -124,7 +124,7 @@ def keyBoardListener(key, x, y):
 
 
 
-blinking = True
+blinking = False
 blinktime=time.time()
 bintervalsec=1
 def blinkonoff():
