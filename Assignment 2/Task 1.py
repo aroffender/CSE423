@@ -113,7 +113,6 @@ def drawLine(x1, y1, x2, y2):
 
 
 
-
 def restart():
     glColor3f(0, 0, 1)
     drawLine(10, 580, 50, 580)
